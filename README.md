@@ -1,16 +1,17 @@
 # Templete Study
 
-½ºÅÍµğ °úÁ¦¸¦ ¿Ã¸®´Â °÷ ÀÔ´Ï´Ù.
+ìŠ¤í„°ë”” ê³¼ì œë¥¼ ì˜¬ë¦¬ëŠ” ê³³ ì…ë‹ˆë‹¤.
 
-## 2Àå °úÁ¦ 
+## 2ì¥ ê³¼ì œ
 
-2°³ ÀÌ»óÀÇ input ÀÌ µé¾î ¿ÔÀ» ¶§ input µéÀÌ µ¿ÀÏÇÑÁö °Ë»çÇÏ´Â ÇÔ¼ö ÅÛÇÃ¸´ ÀÛ¼º
-outputÀº boolÇüÀ¸·Î input µéÀÇ °ª¸¸ ºñ±³ or ÀÚ·áÇü ºñ±³ Æ÷ÇÔ ÇÒÁö¿¡ ´ëÇØ¼­´Â ÀÚÀ¯
+2ê°œ ì´ìƒì˜ input ì´ ë“¤ì–´ ì™”ì„ ë•Œ input ë“¤ì´ ë™ì¼í•œì§€ ê²€ì‚¬í•˜ëŠ” í•¨ìˆ˜ í…œí”Œë¦¿ ì‘ì„± 
+outputì€ boolí˜•ìœ¼ë¡œ input ë“¤ì˜ ê°’ë§Œ ë¹„êµ 
+or ìë£Œí˜• ë¹„êµ í¬í•¨ í• ì§€ì— ëŒ€í•´ì„œëŠ” ììœ 
 
-¿¹)
+ì˜ˆ)
 
-	template <typename T> bool ÇÔ¼öÀÌ¸§ (T input_1, T input_2, ...)
-	template <typename T1, typename T2, ...> bool ÇÔ¼öÀÌ¸§ (T1 input_1, T2 input_2, ...)
+	template <typename T> bool ï¿½Ô¼ï¿½ï¿½Ì¸ï¿½ (T input_1, T input_2, ...)
+	template <typename T1, typename T2, ...> bool ï¿½Ô¼ï¿½ï¿½Ì¸ï¿½ (T1 input_1, T2 input_2, ...)
 
 
 
