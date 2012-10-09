@@ -10,8 +10,8 @@ or 자료형 비교 포함 할지에 대해서는 자유
 
 예)
 
-	template <typename T> bool �Լ��̸� (T input_1, T input_2, ...)
-	template <typename T1, typename T2, ...> bool �Լ��̸� (T1 input_1, T2 input_2, ...)
+	template <typename T> bool 함수이름 (T input_1, T input_2, ...)
+	template <typename T1, typename T2, ...> bool 함수이름 (T1 input_1, T2 input_2, ...)
 
 
 
