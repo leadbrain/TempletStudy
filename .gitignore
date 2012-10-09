@@ -20,6 +20,11 @@
 *.tar
 *.zip
 
+#vim temp files#
+################
+*.swp
+*.*~
+
 # Logs and databases #
 ######################
 *.log
