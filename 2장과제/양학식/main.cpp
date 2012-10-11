@@ -15,7 +15,7 @@ bool compare(T1 a, T2 b) {
 	T1 t1_value = test_value;
 	T2 t2_value = test_value;
 
-    char* p_byte_t1 = (char*)(&t1_value);
+	char* p_byte_t1 = (char*)(&t1_value);
 	char* p_byte_t2 = (char*)(&t2_value);
 
 	for (int i = 0; i < 4; i++) {
@@ -50,7 +50,7 @@ int main(void) {
 
 	bool result = compare(a, b);
 
-
+	printf("Compare result : %d\n", result);
 
 	return 0;
 }
