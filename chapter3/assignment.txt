@@ -3,17 +3,21 @@
 ### 요구사항
 
 1. 저장할 타입과, 아래에서 설명하는 Randomizer 타입을 인자로 하는 RandomStack 클래스 템플릿 작성
-    temmplate <typenaem T, typename Randomizer> class RandomStack;
+
+    예)
+
+    temmplate<typenaem T, typename Randomizer>
+    class RandomStack;
 
 2. RandomStack형 객체는 아래 멤버함수를 호출할 수 있어야 함 (함수이름, 리턴타입, 파라메터등은 자유)
-*  Push 또는 push_back - 스택에 항목 추가
-*  Top 또는 back - 스텍에서 최근 추가된 항목 리턴
-*  Pop 또는 pop_back - 스택에서 최근 추가된 항목을 일정 확률로 제거, 확률 계산은 Randomizer 타입에서 하게 할 것
+    *  Push 또는 push_back - 스택에 항목 추가
+    *  Top 또는 back - 스텍에서 최근 추가된 항목 리턴
+    *  Pop 또는 pop_back - 스택에서 최근 추가된 항목을 일정 확률로 제거, 확률 계산은 Randomizer 타입에서 하게 할 것
 
 3. RandomStack 에서 Randomizer 타입 사용방법은 자유임 (함수 연산자 호출, 특정 멤버함수 호출등)
 
 4. Randomizer 클래스 구현
-*  double형 확률값을 리턴하는 멤버함수 또는 오버로드된 연산자를 제공할 것
+    *  double형 확률값을 리턴하는 멤버함수 또는 오버로드된 연산자를 제공할 것
 
 5. stl, boost 등의 모든 라이브러리 사용은 자유임
   
