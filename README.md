@@ -12,11 +12,6 @@
 
 1. 저장할 타입과, 아래에서 설명하는 Randomizer 타입을 인자로 하는 RandomStack 클래스 템플릿 작성
 
-    예)
-
-    "temmplate<typenaem T, typename Randomizer>"
-    "class RandomStack;"
-
 2. RandomStack형 객체는 아래 멤버함수를 호출할 수 있어야 함 (함수이름, 리턴타입, 파라메터등은 자유)
     *  Push 또는 push_back - 스택에 항목 추가
     *  Top 또는 back - 스텍에서 최근 추가된 항목 리턴
