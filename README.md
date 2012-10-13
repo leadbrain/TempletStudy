@@ -2,6 +2,8 @@
 
 스터디 과제를 올리는 곳 입니다.
 
+
+
 ## 3장 과제 - 클래스 템플릿 작성
 
 스터디 때 말했던 tbb 사용하는 과제는 64bit 및 플랫폼 호환성 이슈로 아래와 같이 변경합니다.
@@ -12,8 +14,8 @@
 
     예)
 
-    temmplate<typenaem T, typename Randomizer>
-    class RandomStack;
+    "temmplate<typenaem T, typename Randomizer>"
+    "class RandomStack;"
 
 2. RandomStack형 객체는 아래 멤버함수를 호출할 수 있어야 함 (함수이름, 리턴타입, 파라메터등은 자유)
     *  Push 또는 push_back - 스택에 항목 추가
@@ -30,6 +32,8 @@
 ### 추가 요구사항 - 선택 과제임
 
 6. RandomStack 클래스 템플릿의 Randomizer 템펠릿 파라메터에 기본 템플릿 인자를 추가할 것
+
+
 
 
 ## 2장 과제
