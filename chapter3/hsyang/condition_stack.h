@@ -1,7 +1,7 @@
 #include <vector>
 #include <iostream>
 
-template<typename T, typename Condition = ConditionRemainSmall<T> >
+template<typename T, typename Condition = MaxPopCondition<T> >
 class ConditionStack {
 public:
 	void PushItem(T item) {
@@ -17,8 +17,8 @@ public:
 		T top_item = GetTopItem();
 
 		for(; it_item != (items.end()-1); ++it_item) {
-			bool result_condition = condition.is_pop_item(top_item, *it_item);
-			if (!result_condition) 
+			bool is_pop_target = condition.is_pop_item(top_item, *it_item);
+			if (!is_pop_target)
 				return;
 		}
 
