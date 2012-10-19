@@ -3,13 +3,14 @@
 #include <functional>
 #include <boost/lambda/lambda.hpp>
 
-struct LogicalTrue: public std::unary_function<int, bool> {
-  bool operator() (int value) { 
+template<typename T>
+struct LogicalTrue: public std::unary_function<T, bool> {
+  bool operator() (T value) { 
     return true;
   }
 };
 
-template<typename T, typename Condition = LogicalTrue>
+template<typename T, typename Condition = LogicalTrue<T> >
 //template<typename T, typename Condition = boost::lambda::constant(true)>
 //template<typename T, typename Condition = std::bind1st(std::less<int>(), 5) >
 class ConditionStack: public std::stack<T> {
@@ -40,3 +41,4 @@ int main(int argc, char* argv[]) {
 
   return 0;
 }
+
