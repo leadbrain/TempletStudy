@@ -6,17 +6,18 @@
 
 둘 중에 하나를 골라 구현해 주세요. 물론 두 가지 모두 하셔도 좋습니다~
 
-문제 1. 두 숫자의 최소 공배수(LCM)을 반환하는 템플릿(구조체 혹은 클래스)를 구현하라. 
+문제 1. 두 숫자의 최소 공배수(LCM)을 반환하는 템플릿(구조체 혹은 클래스)를 구현하라.
+
 문제 2. 팩토리얼(factorial) 템플릿(구조체 혹은 클래스)을 구현하라.
 
 ### 샘플 코드
-template <int num>
-struct Square {
-//static const int = num * num;
-Enum {
-  ret = num * num
-};
-}
+	template <int num>
+	struct Square {
+	//static const int = num * num;
+	Enum {
+	  ret = num * num
+	};
+	}
 
 ### 출처
 Dreamincode [link]: Exercise 2.1, 2.3 
