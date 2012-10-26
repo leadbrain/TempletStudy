@@ -2,6 +2,48 @@
 
 스터디 과제를 올리는 곳 입니다.
 
+## 5장 과제
+정렬 알고리즘 속도 비교를 수행하는 프로그램을 작성하시면 됩니다.
+
+<요구사항>
+1. 배열을 정렬하는 클래스 템플릿를 구현
+(1) 두개의 템플릿 파라미터를 가진다. 
+  템플릿 파라미터
+  - 배열의 자료형
+  - 배열 정렬에 쓰일 알고리즘 클래스 템플릿(Default는 quick sort)
+
+(2) 배열의 주소를 받는 생성자 구현
+
+(3) 멤버 함수 SortArray()
+  - 배열을 정렬 알고리즘 클래스를 통해 정렬 수행
+
+2. 정렬 알고리즘 클래스 템플릿 구현
+(1) 멤버함수 Sort(T*)
+  - 배열의 정렬 수행
+
+(2) 구현할 정렬 알고리즘 
+  - insertion sort
+  - bubble sort
+  - quick sort
+
+3. 3가지 정렬 알고리즘의 속도 비교 결과 출력
+
+<구현된 템플릿을 사용할 main함수 예>
+int main() {
+  int test_array[10] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}; // test_array 생성 방식은 자유
+  
+  ArraySorter<int, InsertionSort> insertion_sorter(test_array);
+  insertion_sorter.SortArray();
+
+  ArraySorter<int, BubbleSort> bubble_sorter(test_array);
+  bubble_sorter.SortArray();
+
+  ArraySorter<int, QuickSort> quick_sorter(test_array);
+  quick_sorter.SortArray();
+  return 0;
+};
+
+
 ## 4장 과제
 
 둘 중에 하나를 골라 구현해 주세요. 물론 두 가지 모두 하셔도 좋습니다~
