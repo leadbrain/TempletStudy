@@ -2,7 +2,8 @@ template<class T>
 class InsertionSort {
 public:
 	void Sort(T* target_array, int n) {
-		int i, j, key;
+		int i, j;
+		T key;
 		for (i = 1; i < n; i++) {
 			key = target_array[i];
 			for (j = i-1; j >= 0 && target_array[j] > key; j--)
@@ -16,7 +17,7 @@ template<class T>
 class BubbleSort {
 public:
 	void Sort(T* target_array,int n) {
-		int i, j, temp;
+		int i, j;
 		for (i = n-1; i > 0; i--) {
 			for (j = 0; j < i; j++) {
 				if (target_array[j] > target_array[j+1]) {
