@@ -29,19 +29,20 @@
 
 
 <구현된 템플릿을 사용할 main함수 예>
-int main() {
-  int test_array[10] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}; // test_array 생성 방식은 자유
+
+	int main() {
+  	  int test_array[10] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}; // test_array 생성 방식은 자유
   
-  ArraySorter<int, InsertionSort> insertion_sorter();
-  insertion_sorter.SortArray(test_array, 10); // 인자 : 배열의 주소, 배열 사이즈
+  	  ArraySorter<int, InsertionSort> insertion_sorter();
+  	  insertion_sorter.SortArray(test_array, 10); // 인자 : 배열의 주소, 배열 사이즈
+	
+  	  ArraySorter<int, BubbleSort> bubble_sorter();
+  	  bubble_sorter.SortArray(test_array, 10); // 인자 : 배열의 주소, 배열 사이즈
 
-  ArraySorter<int, BubbleSort> bubble_sorter();
-  bubble_sorter.SortArray(test_array, 10); // 인자 : 배열의 주소, 배열 사이즈
-
-  ArraySorter<int, QuickSort> quick_sorter();
-  quick_sorter.SortArray(test_array, 10); // 인자 : 배열의 주소, 배열 사이즈
-  return 0;
-};
+  	  ArraySorter<int, QuickSort> quick_sorter();
+  	  quick_sorter.SortArray(test_array, 10); // 인자 : 배열의 주소, 배열 사이즈
+  	  return 0;
+	};
 
 
 ## 4장 과제
