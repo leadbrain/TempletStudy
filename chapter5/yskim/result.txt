@@ -1,0 +1,16 @@
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from ArraySortTest
+[ RUN      ] ArraySortTest.quick_sort_test
+[       OK ] ArraySortTest.quick_sort_test (7 ms)
+[ RUN      ] ArraySortTest.bubble_sort_test
+[       OK ] ArraySortTest.bubble_sort_test (29591 ms)
+[ RUN      ] ArraySortTest.insertion_sort_test
+[       OK ] ArraySortTest.insertion_sort_test (8597 ms)
+[ RUN      ] ArraySortTest.result_test
+[       OK ] ArraySortTest.result_test (6 ms)
+[----------] 4 tests from ArraySortTest (38201 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (38202 ms total)
+[  PASSED  ] 4 tests.
