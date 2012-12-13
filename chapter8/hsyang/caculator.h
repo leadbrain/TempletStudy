@@ -47,16 +47,25 @@ template <class T,
 class Calculator {
 public:
   T Run(T a, T b) {
-    return method_.Calculate(a, b);
+    T result = T();
+
+    result += method_.Calculate(a, b);
+    return result;
   }
 
   template<class T, class OTHER>
   T Run(T a, OTHER b) {
+    T result = T();
     TypeConverter<T, OTHER> converter;
     T converted_a = converter.GetConvertedValue(b);
-    return method_.Calculate(a, b);
+
+    result += method_.Calculate(a, b);
+    return result;
   }
 
 private:
   METHOD<T> method_;
 };
+
+template class Calculator<float, Sum>;
+template class Calculator<int, Multi>;
