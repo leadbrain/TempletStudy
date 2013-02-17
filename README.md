@@ -2,43 +2,6 @@
 
 스터디 과제를 올리는 곳 입니다.
 
-## 15장 과제
-아래의 요구사항을 만족하는 Caculator 클래스를 완성하시면 됩니다.
-
-<요구사항>
-- 정책 클래스를 템플릿 파라미터로 갖는다.
-- 멤버함수 1개 존재 : calculate(A, B)
- calculate함수는 SumPolicy 정책 클래스를 이용해서 연산을 수행한 후에 결과를 리턴
-   (두개의 인자 중 큰 자료형을 리턴, 같다면 해당 자료형을 리턴)
-
-<Code>
-template <typename RESULT, typename T1, typename T2>
-class SumPolicy {
-public:
-    static RESULT compute(T1 t1, T2 t2) { // RESULT는 T1과 T2중에 큰 자료형
-        return t1 + t2;
-    }
-}; // 정책 클래스
-
-/* Calculator를 완성시키시면 됩니다.
-template < …..>
-class Calculator {
-…..calculate(….);
-}
-*/ 
-
-int main() {
-    int a = 4;
-    double b = 2.0;
-    double result = Calculator<int, double>::calculate(a, b); // Default Policy = SumPolicy
-    // double result = Calculator<int, double, SumPolicy>::calculate(a, b);
-
-    return 0;
-}
-
-
-
-
 ## 8장 과제
 사칙연산을 하는 클래스를 작성합니다.
 
