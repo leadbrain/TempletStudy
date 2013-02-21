@@ -26,6 +26,12 @@ public:
 					 >::ResultT ResultT;
 };
 
+template <typename T>
+class Promotion<T, T> {
+public:
+    typedef T ResultT;
+};
+
 template <typename RESULT, typename T1, typename T2>
 class SumPolicy {
 public:
